@@ -1,2 +1,4 @@
 #!/bin/bash
-wget -i wget-list -P $LFS/sources
+export LFS=/mnt/lfs
+mkdir -v $LFS/sources
+wget -i tarball.list -P $LFS/sources
